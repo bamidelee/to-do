@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100;1,300&family=Rubik+Moonrocks&family=Satisfy&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="add">
+        <div class="add-container">
+            <h2>Create a new task <span class="material-symbols-outlined close-add">
+                close
+                </span>
+            </h2>
+            <nav class="tasknav">
+                <a  class="addtask">Task</a>
+                <a   class="project-form">Project</a>
+            </nav>
+            
+            <form action="" class="form form-task">
+                <input type="text" placeholder="Make soup" class="task-title" required>
+                <textarea name="" id="" cols="80" rows="3" placeholder="description" class="task-description" required></textarea>
+                <div class="date">
+                    <label for="date">Due date:</label>
+                    <input type="date" name="date" id="date" class="task-date" required>
+                </div>
+                <div class="priority">
+                    <label for="priority">Priority:</label>
+                    <input type="radio" name="priority" id="low" class="radio1" value="low" required>
+                    <input type="radio" name="priority" id="medium" class="radio2" value="medium">
+                    <input type="radio" name="priority" id="high" class="radio3" value="high" >
+                    <button type="reset" class="task-submit">Add</button>
+                </div>
+            </form>
+            <div class="addproject">
+                <form action="" class="form newproject">
+                    <input type="text" placeholder="Make soup" class="project-title">
+                    <button type="reset" class="project-button">Add</button >
+                </form>
+            </div>
+        </div>
+       
+    </div>
+   
+    <div class="content">
+        <header>
+            <div class="menu-icon">
+                <span class="material-symbols-outlined menu-open" style="font-size:3rem;">
+                    menu
+                </span>
+                <span class="material-symbols-outlined menu-close" style="font-size:3rem;">
+                    menu_open
+                    </span>
+            </div>
+            <div class="logo">
+                
+                <h1>
+                    <span class="material-symbols-outlined" style="font-size:3rem;">
+                    receipt_long
+                    </span>TO-DO
+                </h1>
+            </div>
+            <span class="material-symbols-outlined add-icon">
+                add
+            </span>
+        </header>
+        <div class="sidebar">
+            <nav class='sidebar-nav'>
+            
+                <a class="inbox-button">
+                    <span class="material-symbols-outlined" style="color:red">
+                    all_inbox
+                    </span>Inbox <span class="inbox-count count">0</span>
+                </a>
+            
+                <a class="today-button">
+                    <span class="material-symbols-outlined" style="color: brown;">
+                    today
+                    </span>Today <span class="today-count count">0</span>
+                </a>
+                <a class="tomorrow-button">
+                    <span class="material-symbols-outlined" style="color: purple;">
+                        next_week
+                    </span>
+                    tomorrow <span class="tomorrow-count count">0</span>
+                </a>
+            
+                <a class="upcoming-button">
+                    <span class="material-symbols-outlined" style="color: rgb(0, 255, 42);">
+                    event_upcoming
+                    </span>Upcoming <span class="upcoming-count count">0</span>
+                </a>
+            </nav>
+            <div class="project">
+                <h3>
+                    <span class="material-symbols-outlined project-open">
+                    keyboard_arrow_right
+                    </span>
+                    <span class="material-symbols-outlined project-close">
+                        keyboard_arrow_down
+                    </span>Project
+                </h3>
+                <div class="project-item">
+         
+                </div>
+            </div>
+        </div>
+        <div class="tasks"> 
+            <div class="task-bar"></div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
