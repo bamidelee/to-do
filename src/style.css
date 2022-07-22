@@ -401,6 +401,11 @@ input[type="checkbox"] {
     .menu-open{
         display: block;
     }
+  
+    .content{
+        font-size: 1rem;
+    }
+    
     .sidebar{
         width: 0;
     }
@@ -414,10 +419,14 @@ input[type="checkbox"] {
     .taskBar{
         gap: 2rem;
     }
+    .tasknav{
+        font-size: 1rem !important;
+    }
     .add{
         width: 90%;
         left: 1rem;
         padding-bottom: 1rem;
+        font-size: 1rem !important;
     }
     .priority{
         padding-bottom: 2rem;
